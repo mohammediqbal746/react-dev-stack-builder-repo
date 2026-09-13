@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import TechCards from "./components/TechCards";
+import Footer from "./components/Footer";
 
 export interface TechItem {
   id: string;
@@ -41,17 +42,23 @@ function App() {
     toast.info("Removed from stack!");
   };
 
+  // Remove All Function (New)
+  const handleRemoveAll = () => {
+    setStack([]);
+    toast.error("Removed all technologies from stack!");
+  };
+
   return (
-    <div className="min-h-screen bg-white font-sans pb-20">
+    <div className="min-h-screen bg-white font-sans">
       <Navbar />
-      <main className="max-w-7xl mx-auto px-4 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 lg:px-8 py-8 min-h-screen">
         <Banner />
         
         <div className="flex flex-col lg:flex-row gap-8 mt-16">
           <Suspense 
             fallback={
               <div className="w-full lg:w-2/3 flex justify-center items-center h-64">
-                <h2 className="text-2xl font-bold text-gray-500">Loading.......</h2>
+                <span className="loading loading-spinner text-pink-500 loading-lg"></span>
               </div>
             }
           >
@@ -60,7 +67,7 @@ function App() {
 
           <div className="w-full lg:w-1/3 bg-white border border-gray-100 shadow-sm rounded-2xl p-6 h-fit sticky top-24">
             <h2 className="text-xl font-bold text-gray-900 mb-2">Your Stack</h2>
-            <p className="text-sm text-gray-500 mb-6">{stack.length} Technologies selected</p>
+            <p className="text-sm text-gray-500 mb-6">{stack.length} Technology Selected</p>
             
             {stack.length === 0 ? (
               <p className="text-gray-400">No technologies selected</p>
@@ -80,11 +87,20 @@ function App() {
                     </button>
                   </div>
                 ))}
+                
+                {/* Remove All Button (New) */}
+                <button 
+                  onClick={handleRemoveAll} 
+                  className="w-full mt-4 bg-red-50 hover:bg-red-100 text-red-500 font-bold py-2 rounded-lg transition-colors border border-red-100"
+                >
+                  Remove All
+                </button>
               </div>
             )}
           </div>
         </div>
       </main>
+      
       <ToastContainer position="top-right" autoClose={2500} />
     </div>
   );
