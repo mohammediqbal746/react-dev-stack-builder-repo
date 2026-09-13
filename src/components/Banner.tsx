@@ -1,11 +1,8 @@
-
 import React from 'react';
 
 const Banner = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between py-16 gap-8">
-      
-      {/* Text Content */}
       <div className="flex-1 space-y-6 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
           Build Your Ideal <br />
@@ -25,17 +22,13 @@ const Banner = () => {
           </button>
         </div>
       </div>
-
-      {/* Banner Image */}
       <div className="flex-1 flex justify-center w-full">
-        {/* ফাইলের এক্সটেনশনটি .png না হলে আপনার ফাইলের সঠিক এক্সটেনশনটি (.svg বা .jpg) বসিয়ে দিন */}
         <img 
           src="/banner-stack.png" 
           alt="Tech Stack Illustration" 
           className="w-full max-w-md md:max-w-lg object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300"
         />
       </div>
-
     </div>
   );
 };
