@@ -16,7 +16,7 @@ export interface TechItem {
   difficulty: string;
   badge: string;
 }
-
+//data fetching function//
 const techFetch = async (): Promise<TechItem[]> => {
   const res = await fetch("/data.json");
   const data = await res.json();
@@ -42,7 +42,7 @@ function App() {
     toast.info("Removed from stack!");
   };
 
-  // Remove All Function (New)
+  /* Remove All Function */
   const handleRemoveAll = () => {
     setStack([]);
     toast.error("Removed all technologies from stack!");
@@ -88,7 +88,7 @@ function App() {
                   </div>
                 ))}
                 
-                {/* Remove All Button (New) */}
+                /* Remove All Button  */
                 <button 
                   onClick={handleRemoveAll} 
                   className="w-full mt-4 bg-red-50 hover:bg-red-100 text-red-500 font-bold py-2 rounded-lg transition-colors border border-red-100"

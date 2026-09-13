@@ -25,7 +25,7 @@ const Banner = () => {
       <div className="flex-1 flex justify-center w-full">
         <img 
           src="/banner-stack.png" 
-          alt="Tech Stack Illustration" 
+          alt="dev stack illustration" 
           className="w-full max-w-md md:max-w-lg object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300"
         />
       </div>
@@ -33,4 +33,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Banner; 

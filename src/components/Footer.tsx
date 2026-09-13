@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           
-          {/* Column 1: Brand Info */}
+        
           <div className="md:col-span-1 space-y-4">
             <div className="flex items-center">
               <img src={logo} alt="Dev Stack Logo" className="h-8 object-contain" />
@@ -53,7 +53,8 @@ const Footer = () => {
 
         </div>
 
-        {/* Bottom Bar */}
+       
+       { /* Bottom Bar */}
         <div className="border-t border-gray-100 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
           <p>© 2026 Dev Stack. All rights reserved.</p>
           <div className="flex gap-6">
