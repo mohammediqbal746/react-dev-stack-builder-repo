@@ -4,29 +4,29 @@
     "name": "React",
     "category": "Frontend",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
-    "icon": "https://techicons.dev/icons/react",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
   },
   {
+    "id": "vue",
+    "name": "Vue.js",
+    "category": "Frontend",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Versatile"
+  },
+  {
     "id": "node",
     "name": "Node.js",
     "category": "Backend",
-    "description": "JavaScript runtime built on Chrome's V8 JavaScript engine.",
-    "icon": "https://techicons.dev/icons/nodejs",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Fast"
-  },
-  {
-    "id": "tailwind",
-    "name": "Tailwind CSS",
-    "category": "Styling",
-    "description": "A utility-first CSS framework for rapid UI development.",
-    "icon": "https://techicons.dev/icons/tailwindcss",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Standard"
   }
 ]
