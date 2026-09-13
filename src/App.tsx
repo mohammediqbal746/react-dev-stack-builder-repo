@@ -100,7 +100,7 @@ function App() {
           </div>
         </div>
       </main>
-      
+      <Footer/>
       <ToastContainer position="top-right" autoClose={2500} />
     </div>
   );
